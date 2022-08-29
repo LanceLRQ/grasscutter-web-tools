@@ -160,6 +160,27 @@
         "name": "辰砂之纺锤",
         "star": 4,
         "type": "sword"
+      },
+      {
+        "key": "",
+        "code": "11416",
+        "name": "笼钓瓶一心",
+        "star": 4,
+        "type": "sword"
+      },
+      {
+        "key": "",
+        "code": "11417",
+        "name": "原木刀",
+        "star": 4,
+        "type": "sword"
+      },
+      {
+        "key": "",
+        "code": "11418",
+        "name": "西福斯的月光",
+        "star": 4,
+        "type": "sword"
       }
     ],
     "5": [
@@ -209,6 +230,13 @@
         "key": "HaranGeppakuFutsu",
         "code": "11510",
         "name": "波乱月白经津",
+        "star": 5,
+        "type": "sword"
+      },
+      {
+        "key": "",
+        "code": "11511",
+        "name": "圣显之钥",
         "star": 5,
         "type": "sword"
       }
@@ -373,6 +401,13 @@
         "key": "Akuoumaru",
         "code": "12416",
         "name": "恶王丸",
+        "star": 4,
+        "type": "claymore"
+      },
+      {
+        "key": "",
+        "code": "12417",
+        "name": "森林王器",
         "star": 4,
         "type": "claymore"
       }
@@ -548,6 +583,20 @@
         "name": "断浪长鳍",
         "star": 4,
         "type": "polearm"
+      },
+      {
+        "key": "",
+        "code": "13417",
+        "name": "贯月矢",
+        "star": 4,
+        "type": "polearm"
+      },
+      {
+        "key": "",
+        "code": "13419",
+        "name": "风信之锋",
+        "star": 4,
+        "type": "polearm"
       }
     ],
     "5": [
@@ -590,6 +639,13 @@
         "key": "EngulfingLightning",
         "code": "13509",
         "name": "薙草之稻光",
+        "star": 5,
+        "type": "polearm"
+      },
+      {
+        "key": "",
+        "code": "13511",
+        "name": "赤沙之杖",
         "star": 5,
         "type": "polearm"
       }
@@ -763,6 +819,20 @@
         "name": "曚云之月",
         "star": 4,
         "type": "bow"
+      },
+      {
+        "key": "",
+        "code": "15417",
+        "name": "王下近侍",
+        "star": 4,
+        "type": "bow"
+      },
+      {
+        "key": "",
+        "code": "15418",
+        "name": "竭泽",
+        "star": 4,
+        "type": "bow"
       }
     ],
     "5": [
@@ -798,6 +868,13 @@
         "key": "ThunderingPulse",
         "code": "15509",
         "name": "飞雷之弦振",
+        "star": 5,
+        "type": "bow"
+      },
+      {
+        "key": "",
+        "code": "15511",
+        "name": "猎人之径",
         "star": 5,
         "type": "bow"
       }
@@ -962,6 +1039,20 @@
         "key": "OathswornEye",
         "code": "14415",
         "name": "证誓之明瞳",
+        "star": 4,
+        "type": "catalyst"
+      },
+      {
+        "key": "",
+        "code": "14416",
+        "name": "流浪的晚星",
+        "star": 4,
+        "type": "catalyst"
+      },
+      {
+        "key": "",
+        "code": "14417",
+        "name": "盈满之实",
         "star": 4,
         "type": "catalyst"
       }

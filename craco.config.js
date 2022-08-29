@@ -24,9 +24,9 @@ module.exports = {
       resolve: {
         extensions: ['.js', '.jsx', '.json', '.png', '.webp', '.jpg'],
       },
-      output: {
-        publicPath: process.env.NODE_ENV === 'development' ? '/' : '/grasscutter-web-tools'
-      }
+      ...(process.env.NODE_ENV !== 'development' ? { output: {
+        publicPath: '/grasscutter-web-tools'
+      }} : {}),
     },
     alias: {
       "@styles": path.resolve(__dirname, "src/styles"),

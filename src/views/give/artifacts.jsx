@@ -1,5 +1,5 @@
 import React, {
-  useCallback, useEffect, useMemo, useRef, useState
+  useCallback, useMemo, useRef, useState, useLayoutEffect
 } from 'react';
 import {
   Form, Layout, Select, Row, Col, InputNumber,
@@ -100,7 +100,7 @@ function GiveArtifactsPage() {
     });
   }, [ArtifactGroupsRawDataList]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!restoreData) {
       setArtifactGroupId(null);
       setArtifactStar(null);
@@ -222,7 +222,7 @@ function GiveArtifactsPage() {
   }, [artifactGroupWithStar]);
 
   // 星级变更
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!strictMode) {
       setArtifactLevel(20);
     } else {

@@ -112,7 +112,6 @@ function SpawnPage() {
         <Form.Item label="等级">
           <InputNumber
             min={1}
-            max={90}
             value={itemLevel}
             onChange={(val) => setItemLevel(val)}
           />

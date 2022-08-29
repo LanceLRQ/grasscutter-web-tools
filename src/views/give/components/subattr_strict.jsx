@@ -1,5 +1,5 @@
 import React, {
-  useEffect, useMemo, useRef, useState 
+  useEffect, useMemo, useRef, useState, useLayoutEffect
 } from 'react';
 import P from 'prop-types';
 import SubAttrInput from '@views/give/components/subattr_input';
@@ -30,7 +30,7 @@ function SubAttrStrict({
   const [subAttrList, setSubAttrList] = useState([getDefaultGroupEntity()]);
   const subAttrListRef = useRef(startupList || [getDefaultGroupEntity()]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!isEmpty(startupList) && isArray(startupList)) {
       subAttrListRef.current = startupList;
       setSubAttrList([...startupList]);
@@ -40,8 +40,8 @@ function SubAttrStrict({
   useEffect(() => {
     onChange(subAttrList);
   }, [subAttrList]);
-  
-  useEffect(() => {
+
+  useLayoutEffect(() => {
     // console.log(artifactMainAttrName, subAttrList, 'rlist_first');
     let validLength = ArtifactSubAttrCateLimitation[starLevel];  // 圣遗物最大词条种类数
     if (artLevel < ArtifactSubAttrFullCateNeedLevel[starLevel]) { // 如果等级不足，减掉
