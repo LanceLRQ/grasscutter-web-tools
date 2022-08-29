@@ -88,7 +88,7 @@ function SystemCharacterPage() {
         value: 'avatars',
         name: '一键获得所有角色',
         label: <div className="icon-selector-item">
-          <Avatar icon={<RocketOutlined />} />
+          <Avatar icon={<RocketOutlined />} style={{ background: 'green' }} />
           <div className="icon-selector-item-meta">
             <div className="icon-selector-item-title">
               一键获得所有角色

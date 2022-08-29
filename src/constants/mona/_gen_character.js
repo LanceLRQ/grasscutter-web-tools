@@ -12,7 +12,7 @@ export default {
         element: "Anemo",
         weapon: "Sword",
         star: 5,
-                // avatar: AetherAnemo_avatar,
+        // avatar: AetherAnemo_avatar,
         avatar: getName("PlayerBoy"),
         skillName1: "普通攻击·异邦铁风",
         skillName2: "风涡剑",
@@ -80,7 +80,7 @@ export default {
         star: 5,
                 // avatar: Albedo_avatar,
         avatar: getName("Albedo"),
-        skillName1: "普通攻击·西风剑术·白",
+                skillName1: "普通攻击·西风剑术·白",
         skillName2: "创生法·拟造阳华",
         skillName3: "诞生式·大地之潮",
         skillMap1: [
@@ -136,7 +136,7 @@ export default {
         star: 5,
                 // avatar: Aloy_avatar,
         avatar: getName("Aloy"),
-        skillName1: "普通攻击·快速射击",
+                skillName1: "普通攻击·快速射击",
         skillName2: "冰尘雪野",
         skillName3: "曙光预言",
         skillMap1: [
@@ -192,7 +192,7 @@ export default {
         star: 4,
                 // avatar: Amber_avatar,
         avatar: getName("Ambor"),
-        skillName1: "普通攻击·神射手",
+                skillName1: "普通攻击·神射手",
         skillName2: "爆弹玩偶",
         skillName3: "箭雨",
         skillMap1: [
@@ -246,7 +246,7 @@ export default {
         star: 5,
                 // avatar: AratakiItto_avatar,
         avatar: getName("Itto"),
-        skillName1: "普通攻击•喧哗屋传说",
+                skillName1: "普通攻击•喧哗屋传说",
         skillName2: "魔杀绝技•赤牛发破！",
         skillName3: "最恶鬼王•一斗轰临！！",
         skillMap1: [
@@ -298,7 +298,7 @@ export default {
         star: 4,
                 // avatar: Barbara_avatar,
         avatar: getName("Barbara"),
-        skillName1: "普通攻击·水之浅唱",
+                skillName1: "普通攻击·水之浅唱",
         skillName2: "演唱，开始♪",
         skillName3: "闪耀奇迹♪",
         skillMap1: [
@@ -350,7 +350,7 @@ export default {
         star: 4,
                 // avatar: Beidou_avatar,
         avatar: getName("Beidou"),
-        skillName1: "普通攻击·征涛",
+                skillName1: "普通攻击·征涛",
         skillName2: "捉浪",
         skillName3: "斫雷",
         skillMap1: [
@@ -408,7 +408,7 @@ export default {
         star: 4,
                 // avatar: Bennett_avatar,
         avatar: getName("Bennett"),
-        skillName1: "普通攻击·好运剑",
+                skillName1: "普通攻击·好运剑",
         skillName2: "热情过载",
         skillName3: "美妙旅程",
         skillMap1: [
@@ -463,6 +463,32 @@ export default {
             
         ],
     },
+
+    Candace: {
+        name: "Candace",
+        chs: "坎蒂丝",
+        element: "Hydro",
+        weapon: "Polearm",
+        star: 4,
+        avatar: getName("Candace"),
+        skillName1: "普通攻击·流耀枪术·守势",
+        skillName2: "圣仪·苍鹭庇卫",
+        skillName3: "圣仪·灰鸰衒潮",
+        skillMap1: [
+        ],
+        skillMap2: [
+
+        ],
+        skillMap3: [
+
+        ],
+        config: [
+
+        ],
+        configSkill: [
+
+        ],
+    },
     
     Chongyun: {
         name: "Chongyun",
@@ -472,7 +498,7 @@ export default {
         star: 4,
                 // avatar: Chongyun_avatar,
         avatar: getName("Chongyun"),
-        skillName1: "普通攻击·灭邪四式",
+                skillName1: "普通攻击·灭邪四式",
         skillName2: "灵刃·重华叠霜",
         skillName3: "灵刃·云开星落",
         skillMap1: [
@@ -513,6 +539,63 @@ export default {
             
         ],
     },
+
+    Collei: {
+        name: "Collei",
+        chs: "柯莱",
+        element: "Dendro",
+        weapon: "Bow",
+        star: 4,
+
+        avatar: getName("Collei"),
+                skillName1: "普通攻击·祈颂射艺",
+        skillName2: "拂花偈叶",
+        skillName3: "猫猫秘宝",
+        skillMap1: [
+
+
+        ],
+        skillMap2: [
+
+
+        ],
+        skillMap3: [
+
+
+        ],
+        config: [
+
+        ],
+        configSkill: [
+
+        ],
+    },
+
+    Cyno: {
+        name: "Cyno",
+        chs: "赛诺",
+        element: "Electro",
+        weapon: "Polearm",
+        star: 4,
+        avatar: getName("Cyno"),
+        skillName1: "普通攻击·七圣枪术",
+        skillName2: "秘仪·律渊渡魂",
+        skillName3: "圣仪·煟煌随狼行",
+        skillMap1: [
+        ],
+        skillMap2: [
+
+        ],
+        skillMap3: [
+
+        ],
+        config: [
+
+        ],
+        configSkill: [
+
+        ],
+    },
     
     Diluc: {
         name: "Diluc",
@@ -522,7 +605,7 @@ export default {
         star: 5,
                 // avatar: Diluc_avatar,
         avatar: getName("Diluc"),
-        skillName1: "普通攻击·淬炼之剑",
+                skillName1: "普通攻击·淬炼之剑",
         skillName2: "逆焰之刃",
         skillName3: "黎明",
         skillMap1: [
@@ -582,7 +665,7 @@ export default {
         star: 4,
                 // avatar: Diona_avatar,
         avatar: getName("Diona"),
-        skillName1: "普通攻击·猎人射术",
+                skillName1: "普通攻击·猎人射术",
         skillName2: "猫爪冻冻",
         skillName3: "最烈特调",
         skillMap1: [
@@ -629,6 +712,31 @@ export default {
             
         ],
     },
+
+    Dori: {
+        name: "Dori",
+        chs: "多莉",
+        element: "Electro",
+        weapon: "Claymore",
+        star: 4,
+        avatar: getName("Dori"),
+                skillName1: "普通攻击·妙显剑舞·改",
+        skillName2: "镇灵之灯·烦恼解决炮",
+        skillName3: "卡萨扎莱宫的无微不至",
+        skillMap1: [
+        ],
+        skillMap2: [
+        ],
+        skillMap3: [
+
+        ],
+        config: [
+
+        ],
+        configSkill: [
+
+        ],
+    },
     
     Eula: {
         name: "Eula",
@@ -638,7 +746,7 @@ export default {
         star: 5,
                 // avatar: Eula_avatar,
         avatar: getName("Eula"),
-        skillName1: "普通攻击·西风剑术·宗室",
+                skillName1: "普通攻击·西风剑术·宗室",
         skillName2: "冰潮的涡旋",
         skillName3: "凝浪之光剑",
         skillMap1: [
@@ -704,7 +812,7 @@ export default {
         star: 4,
                 // avatar: Fischl_avatar,
         avatar: getName("Fischl"),
-        skillName1: "普通攻击·罪灭之矢",
+                skillName1: "普通攻击·罪灭之矢",
         skillName2: "夜巡影翼",
         skillName3: "至夜幻现",
         skillMap1: [
@@ -758,7 +866,7 @@ export default {
         star: 5,
                 // avatar: Ganyu_avatar,
         avatar: getName("Ganyu"),
-        skillName1: "普通攻击·流天射术",
+                skillName1: "普通攻击·流天射术",
         skillName2: "山泽麟迹",
         skillName3: "降众天华",
         skillMap1: [
@@ -820,7 +928,7 @@ export default {
         star: 4,
                 // avatar: Gorou_avatar,
         avatar: getName("Gorou"),
-        skillName1: "普通攻击•呲牙裂扇箭",
+                skillName1: "普通攻击•呲牙裂扇箭",
         skillName2: "犬坂吠吠方圆阵",
         skillName3: "兽牙逐突形胜战法",
         skillMap1: [
@@ -872,7 +980,7 @@ export default {
         star: 5,
                 // avatar: HuTao_avatar,
         avatar: getName("Hutao"),
-        skillName1: "普通攻击·往生秘传枪法",
+                skillName1: "普通攻击·往生秘传枪法",
         skillName2: "蝶引来生",
         skillName3: "安神秘法",
         skillMap1: [
@@ -932,7 +1040,7 @@ export default {
         star: 5,
                 // avatar: Jean_avatar,
         avatar: getName("Qin"),
-        skillName1: "普通攻击·西风剑术",
+                skillName1: "普通攻击·西风剑术",
         skillName2: "风压剑",
         skillName3: "蒲公英之风",
         skillMap1: [
@@ -988,7 +1096,7 @@ export default {
         star: 5,
                 // avatar: KaedeharaKazuha_avatar,
         avatar: getName("Kazuha"),
-        skillName1: "普通攻击·我流剑术",
+                skillName1: "普通攻击·我流剑术",
         skillName2: "千早振",
         skillName3: "万叶之一刀",
         skillMap1: [
@@ -1070,7 +1178,7 @@ export default {
         star: 4,
                 // avatar: Kaeya_avatar,
         avatar: getName("Kaeya"),
-        skillName1: "普通攻击·仪典剑术",
+                skillName1: "普通攻击·仪典剑术",
         skillName2: "霜袭",
         skillName3: "凛冽轮舞",
         skillMap1: [
@@ -1122,7 +1230,7 @@ export default {
         star: 5,
                 // avatar: KamisatoAyaka_avatar,
         avatar: getName("Ayaka"),
-        skillName1: "普通攻击·神里流·倾",
+                skillName1: "普通攻击·神里流·倾",
         skillName2: "神里流·冰华",
         skillName3: "神里流·霜灭",
         skillMap1: [
@@ -1182,7 +1290,7 @@ export default {
         star: 5,
                 // avatar: KamisatoAyato_avatar,
         avatar: getName("Ayato"),
-        skillName1: "普通攻击·神里流·转",
+                skillName1: "普通攻击·神里流·转",
         skillName2: "神里流·镜花",
         skillName3: "神里流·水囿",
         skillMap1: [
@@ -1242,7 +1350,7 @@ export default {
         star: 5,
                 // avatar: Keqing_avatar,
         avatar: getName("Keqing"),
-        skillName1: "普通攻击·云来剑法",
+                skillName1: "普通攻击·云来剑法",
         skillName2: "星斗归位",
         skillName3: "天街巡游",
         skillMap1: [
@@ -1308,7 +1416,7 @@ export default {
         star: 5,
                 // avatar: Klee_avatar,
         avatar: getName("Klee"),
-        skillName1: "普通攻击·砰砰",
+                skillName1: "普通攻击·砰砰",
         skillName2: "蹦蹦炸弹",
         skillName3: "轰轰火花",
         skillMap1: [
@@ -1358,7 +1466,7 @@ export default {
         star: 4,
                 // avatar: KujouSara_avatar,
         avatar: getName("Sara"),
-        skillName1: "普通攻击•天狗传弓术",
+                skillName1: "普通攻击•天狗传弓术",
         skillName2: "鸦羽天狗霆雷召咒",
         skillName3: "煌煌千道镇式",
         skillMap1: [
@@ -1412,7 +1520,7 @@ export default {
         star: 4,
                 // avatar: Lisa_avatar,
         avatar: getName("Lisa"),
-        skillName1: "普通攻击·指尖雷暴",
+                skillName1: "普通攻击·指尖雷暴",
         skillName2: "苍雷",
         skillName3: "蔷薇的雷光",
         skillMap1: [
@@ -1468,7 +1576,7 @@ export default {
         star: 5,
                 // avatar: Mona_avatar,
         avatar: getName("Mona"),
-        skillName1: "普通攻击·因果点破",
+                skillName1: "普通攻击·因果点破",
         skillName2: "水中幻愿",
         skillName3: "星命定轨",
         skillMap1: [
@@ -1518,7 +1626,7 @@ export default {
         star: 4,
                 // avatar: Ningguang_avatar,
         avatar: getName("Ningguang"),
-        skillName1: "普通攻击·千金掷",
+                skillName1: "普通攻击·千金掷",
         skillName2: "璇玑屏",
         skillName3: "天权崩玉",
         skillMap1: [
@@ -1555,6 +1663,32 @@ export default {
             
         ],
     },
+
+    Nilou: {
+        name: "Nilou",
+        chs: "妮露",
+        element: "Hydro",
+        weapon: "Sword",
+        star: 5,
+        avatar: getName("Nilou"),
+                skillName1: "普通攻击·弦月舞步",
+        skillName2: "七域舞步",
+        skillName3: "浮莲舞步·远梦聆泉",
+        skillMap1: [
+        ],
+        skillMap2: [
+
+        ],
+        skillMap3: [
+
+        ],
+        config: [
+
+        ],
+        configSkill: [
+
+        ],
+    },
     
     Noelle: {
         name: "Noelle",
@@ -1564,7 +1698,7 @@ export default {
         star: 4,
                 // avatar: Noelle_avatar,
         avatar: getName("Noel"),
-        skillName1: "普通攻击·西风剑术·女仆",
+                skillName1: "普通攻击·西风剑术·女仆",
         skillName2: "护心铠",
         skillName3: "大扫除",
         skillMap1: [
@@ -1620,7 +1754,7 @@ export default {
         star: 5,
                 // avatar: Qiqi_avatar,
         avatar: getName("Qiqi"),
-        skillName1: "普通攻击·云来古剑法",
+                skillName1: "普通攻击·云来古剑法",
         skillName2: "仙法·寒病鬼差",
         skillName3: "仙法·救苦度厄",
         skillMap1: [
@@ -1684,7 +1818,7 @@ export default {
         star: 5,
                 // avatar: RaidenShogun_avatar,
         avatar: getName("Shougun"),
-        skillName1: "普通攻击•源流",
+                skillName1: "普通攻击•源流",
         skillName2: "神变•恶曜开眼",
         skillName3: "奥义•梦想真说",
         skillMap1: [
@@ -1764,7 +1898,7 @@ export default {
         star: 4,
                 // avatar: Razor_avatar,
         avatar: getName("Razor"),
-        skillName1: "普通攻击·钢脊",
+                skillName1: "普通攻击·钢脊",
         skillName2: "利爪与苍雷",
         skillName3: "雷牙",
         skillMap1: [
@@ -1828,7 +1962,7 @@ export default {
         star: 4,
                 // avatar: Rosaria_avatar,
         avatar: getName("Rosaria"),
-        skillName1: "普通攻击·教会枪术",
+                skillName1: "普通攻击·教会枪术",
         skillName2: "噬罪的告解",
         skillName3: "终命的圣礼",
         skillMap1: [
@@ -1888,7 +2022,7 @@ export default {
         star: 5,
                 // avatar: SangonomiyaKokomi_avatar,
         avatar: getName("Kokomi"),
-        skillName1: "普通攻击•水有常形",
+                skillName1: "普通攻击•水有常形",
         skillName2: "海月之誓",
         skillName3: "海人化羽",
         skillMap1: [
@@ -1940,7 +2074,7 @@ export default {
         star: 4,
                 // avatar: Sayu_avatar,
         avatar: getName("Sayu"),
-        skillName1: "普通攻击·忍刀·终末番",
+                skillName1: "普通攻击·忍刀·终末番",
         skillName2: "呜呼流·风隐急进",
         skillName3: "呜呼流·影貉缭乱",
         skillMap1: [
@@ -2018,7 +2152,7 @@ export default {
         star: 5,
                 // avatar: Shenhe_avatar,
         avatar: getName("Shenhe"),
-        skillName1: "普通攻击•踏辰摄斗",
+                skillName1: "普通攻击•踏辰摄斗",
         skillName2: "仰灵威召将役咒",
         skillName3: "神女遣灵真诀",
         skillMap1: [
@@ -2065,6 +2199,32 @@ export default {
             
         ],
     },
+
+    Shinobu: {
+        name: "Shinobu",
+        chs: "久岐忍",
+        element: "Electro",
+        weapon: "Sward",
+        star: 4,
+        avatar: getName("Shinobu"),
+        skillName1: "普通攻击·忍流飞刃斩",
+        skillName2: "越祓雷草之轮",
+        skillName3: "御咏鸣神刈山祭",
+        skillMap1: [
+        ],
+        skillMap2: [
+
+        ],
+        skillMap3: [
+
+        ],
+        config: [
+
+        ],
+        configSkill: [
+
+        ],
+    },
     
     Sucrose: {
         name: "Sucrose",
@@ -2074,7 +2234,7 @@ export default {
         star: 4,
                 // avatar: Sucrose_avatar,
         avatar: getName("Sucrose"),
-        skillName1: "普通攻击·简式风灵作成",
+                skillName1: "普通攻击·简式风灵作成",
         skillName2: "风灵作成·陆叁零捌",
         skillName3: "禁·风灵作成·柒伍同构贰型",
         skillMap1: [
@@ -2130,7 +2290,7 @@ export default {
         star: 5,
                 // avatar: Tartaglia_avatar,
         avatar: getName("Tartaglia"),
-        skillName1: "普通攻击·断雨",
+                skillName1: "普通攻击·断雨",
         skillName2: "魔王武装·狂澜",
         skillName3: "极恶技·尽灭闪",
         skillMap1: [
@@ -2203,7 +2363,39 @@ export default {
             
         ],
     },
-    
+
+    Tighnari: {
+        name: "Tighnari",
+        chs: "提纳里",
+        element: "Dendro",
+        weapon: "Bow",
+        star: 5,
+                // avatar: Thoma_avatar,
+        avatar: getName("Tighnari"),
+                skillName1: "普通攻击·藏蕴破障",
+        skillName2: "识果种雷",
+        skillName3: "造生缠藤箭",
+        skillMap1: [
+            
+
+            
+        ],
+        skillMap2: [
+
+            
+        ],
+        skillMap3: [
+
+            
+        ],
+        config: [
+            
+        ],
+        configSkill: [
+            
+        ],
+    },
+
     Thoma: {
         name: "Thoma",
         chs: "托马",
@@ -2212,45 +2404,45 @@ export default {
         star: 4,
                 // avatar: Thoma_avatar,
         avatar: getName("Tohma"),
-        skillName1: "普通攻击·迅破枪势",
+                skillName1: "普通攻击·迅破枪势",
         skillName2: "烈烧佑命之侍护",
         skillName3: "真红炽火之大铠",
         skillMap1: [
-            
+
             { index: 0, chs: "一段伤害" },
-            
+
             { index: 1, chs: "二段伤害" },
-            
+
             { index: 2, chs: "三段伤害/2" },
-            
+
             { index: 4, chs: "四段伤害" },
-            
+
             { index: 5, chs: "重击伤害" },
-            
+
             { index: 6, chs: "下坠期间伤害" },
-            
+
             { index: 7, chs: "低空坠地冲击伤害" },
-            
+
             { index: 8, chs: "高空坠地冲击伤害" },
-            
+
         ],
         skillMap2: [
-            
+
             { index: 9, chs: "技能伤害" },
-            
+
         ],
         skillMap3: [
-            
+
             { index: 10, chs: "技能伤害" },
-            
+
             { index: 11, chs: "炽火崩破伤害" },
-            
+
         ],
         config: [
-            
+
         ],
         configSkill: [
-            
+
         ],
     },
     
@@ -2262,7 +2454,7 @@ export default {
         star: 5,
                 // avatar: Venti_avatar,
         avatar: getName("Venti"),
-        skillName1: "普通攻击·神代射术",
+                skillName1: "普通攻击·神代射术",
         skillName2: "高天之歌",
         skillName3: "风神之诗",
         skillMap1: [
@@ -2330,7 +2522,7 @@ export default {
         star: 4,
                 // avatar: Xiangling_avatar,
         avatar: getName("Xiangling"),
-        skillName1: "普通攻击·白案功夫",
+                skillName1: "普通攻击·白案功夫",
         skillName2: "锅巴出击",
         skillName3: "旋火轮",
         skillMap1: [
@@ -2388,7 +2580,7 @@ export default {
         star: 5,
                 // avatar: Xiao_avatar,
         avatar: getName("Xiao"),
-        skillName1: "普通攻击·卷积微尘",
+                skillName1: "普通攻击·卷积微尘",
         skillName2: "风轮两立",
         skillName3: "靖妖傩舞",
         skillMap1: [
@@ -2448,7 +2640,7 @@ export default {
         star: 4,
                 // avatar: Xingqiu_avatar,
         avatar: getName("Xingqiu"),
-        skillName1: "普通攻击·古华剑法",
+                skillName1: "普通攻击·古华剑法",
         skillName2: "古华剑·画雨笼山",
         skillName3: "古华剑·裁雨留虹",
         skillMap1: [
@@ -2508,7 +2700,7 @@ export default {
         star: 4,
                 // avatar: Xinyan_avatar,
         avatar: getName("Xinyan"),
-        skillName1: "普通攻击·炎舞",
+                skillName1: "普通攻击·炎舞",
         skillName2: "热情拂扫",
         skillName3: "叛逆刮弦",
         skillMap1: [
@@ -2562,7 +2754,7 @@ export default {
         star: 5,
                 // avatar: YaeMiko_avatar,
         avatar: getName("Yae"),
-        skillName1: "普通攻击·狐灵食罪式",
+                skillName1: "普通攻击·狐灵食罪式",
         skillName2: "野干役咒·杀生樱",
         skillName3: "大密法·天狐显真",
         skillMap1: [
@@ -2616,7 +2808,7 @@ export default {
         star: 4,
                 // avatar: Yanfei_avatar,
         avatar: getName("Feiyan"),
-        skillName1: "普通攻击·火漆制印",
+                skillName1: "普通攻击·火漆制印",
         skillName2: "丹书立约",
         skillName3: "凭此结契",
         skillMap1: [
@@ -2665,6 +2857,28 @@ export default {
             
         ],
     },
+
+    Yelan: {
+        name: "Yelan",
+        chs: "夜兰",
+        element: "Hydro",
+        weapon: "Polearm",
+        star: 5,
+        avatar: getName("Yelan"),
+        skillName1: "普通攻击·潜形隐曜弓",
+        skillName2: "萦络纵命索",
+        skillName3: "渊图玲珑骰",
+        skillMap1: [
+        ],
+        skillMap2: [
+        ],
+        skillMap3: [
+        ],
+        config: [
+        ],
+        configSkill: [
+        ],
+    },
     
     Yoimiya: {
         name: "Yoimiya",
@@ -2674,7 +2888,7 @@ export default {
         star: 5,
                 // avatar: Yoimiya_avatar,
         avatar: getName("Yoimiya"),
-        skillName1: "普通攻击·烟火打扬",
+                skillName1: "普通攻击·烟火打扬",
         skillName2: "焰硝庭火舞",
         skillName3: "琉金云间草",
         skillMap1: [
@@ -2732,7 +2946,7 @@ export default {
         star: 4,
                 // avatar: Yunjin_avatar,
         avatar: getName("Yunjin"),
-        skillName1: "普通攻击·拂云出手",
+                skillName1: "普通攻击·拂云出手",
         skillName2: "旋云开相",
         skillName3: "破嶂见旌仪",
         skillMap1: [
@@ -2790,7 +3004,7 @@ export default {
         star: 5,
                 // avatar: Zhongli_avatar,
         avatar: getName("Zhongli"),
-        skillName1: "普通攻击·岩雨",
+                skillName1: "普通攻击·岩雨",
         skillName2: "地心",
         skillName3: "天星",
         skillMap1: [
