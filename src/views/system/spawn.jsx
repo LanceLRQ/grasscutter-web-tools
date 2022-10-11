@@ -1,10 +1,11 @@
-import React, { useMemo, useState } from 'react';
+import React, { useContext, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   Button, Col, Form, Input, InputNumber, Layout, message, Radio, Row, Select, Switch
 } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 import SpawnFavList from '@views/system/components/spawn_fav_list';
+import { GlobalContext } from '@views/context';
 import { SpawnFavListReducer } from '@/store/profiles';
 import AnimalList from '@/constants/animal.json';
 import MonsterList from '@/constants/monster.json';
@@ -19,13 +20,14 @@ const ListMap = {
 function SpawnPage() {
   const dispatch = useDispatch();
   const isWSConnected = useSelector((state) => state.system?.systemInfo?.isConnected);
+  const { gTargetUID } = useContext(GlobalContext);
 
   const [listType, setListType] = useState('monster');
   const [itemCode, setItemCode] = useState(null);
   const [itemName, setItemName] = useState(null);
   const [itemCount, setItemCount] = useState(1);
   const [itemLevel, setItemLevel] = useState(1);
-  const [forUserId, setForUserId] = useState('');
+  const [forUserId, setForUserId] = useState(gTargetUID);
 
   const calculatedCommand = useMemo(() => {
     if (!itemCode) return '';

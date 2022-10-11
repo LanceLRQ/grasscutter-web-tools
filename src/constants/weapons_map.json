@@ -162,21 +162,21 @@
         "type": "sword"
       },
       {
-        "key": "",
+        "key": "KagotsurubeIsshin",
         "code": "11416",
         "name": "笼钓瓶一心",
         "star": 4,
         "type": "sword"
       },
       {
-        "key": "",
+        "key": "SapwoodBlade",
         "code": "11417",
         "name": "原木刀",
         "star": 4,
         "type": "sword"
       },
       {
-        "key": "",
+        "key": "XiphosMoonlight",
         "code": "11418",
         "name": "西福斯的月光",
         "star": 4,
@@ -234,7 +234,7 @@
         "type": "sword"
       },
       {
-        "key": "",
+        "key": "KeyOfKhajNisut",
         "code": "11511",
         "name": "圣显之钥",
         "star": 5,
@@ -284,7 +284,7 @@
         "type": "claymore"
       },
       {
-        "key": "",
+        "key": "12304",
         "code": "12304",
         "name": "石英大剑",
         "star": 3,
@@ -405,7 +405,7 @@
         "type": "claymore"
       },
       {
-        "key": "",
+        "key": "ForestRegalia",
         "code": "12417",
         "name": "森林王器",
         "star": 4,
@@ -492,7 +492,7 @@
         "type": "polearm"
       },
       {
-        "key": "",
+        "key": "13304",
         "code": "13304",
         "name": "「旗杆」",
         "star": 3,
@@ -585,14 +585,14 @@
         "type": "polearm"
       },
       {
-        "key": "",
+        "key": "Moonpiercer",
         "code": "13417",
         "name": "贯月矢",
         "star": 4,
         "type": "polearm"
       },
       {
-        "key": "",
+        "key": "MissiveWindspear",
         "code": "13419",
         "name": "风信之锋",
         "star": 4,
@@ -643,7 +643,7 @@
         "type": "polearm"
       },
       {
-        "key": "",
+        "key": "StaffOfTheScarletSands",
         "code": "13511",
         "name": "赤沙之杖",
         "star": 5,
@@ -707,7 +707,7 @@
         "type": "bow"
       },
       {
-        "key": "",
+        "key": "15306",
         "code": "15306",
         "name": "黑檀弓",
         "star": 3,
@@ -821,14 +821,14 @@
         "type": "bow"
       },
       {
-        "key": "",
+        "key": "KingsSquire",
         "code": "15417",
         "name": "王下近侍",
         "star": 4,
         "type": "bow"
       },
       {
-        "key": "",
+        "key": "EndOfTheLine",
         "code": "15418",
         "name": "竭泽",
         "star": 4,
@@ -872,7 +872,7 @@
         "type": "bow"
       },
       {
-        "key": "",
+        "key": "HuntersPath",
         "code": "15511",
         "name": "猎人之径",
         "star": 5,
@@ -936,7 +936,7 @@
         "type": "catalyst"
       },
       {
-        "key": "",
+        "key": "14306",
         "code": "14306",
         "name": "琥珀玥",
         "star": 3,
@@ -1043,14 +1043,14 @@
         "type": "catalyst"
       },
       {
-        "key": "",
+        "key": "WanderingEvenstar",
         "code": "14416",
         "name": "流浪的晚星",
         "star": 4,
         "type": "catalyst"
       },
       {
-        "key": "",
+        "key": "FruitOfFulfillment",
         "code": "14417",
         "name": "盈满之实",
         "star": 4,
@@ -1090,6 +1090,13 @@
         "key": "KagurasVerity",
         "code": "14509",
         "name": "神乐之真意",
+        "star": 5,
+        "type": "catalyst"
+      },
+      {
+        "key": "AThousandFloatingDreams",
+        "code": "14511",
+        "name": "千夜浮梦",
         "star": 5,
         "type": "catalyst"
       }

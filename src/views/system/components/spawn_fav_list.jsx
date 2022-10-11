@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {
-  Button, message, Modal, Space, Table, Tag
+  Button, Input, message, Modal, Space, Table, Tag
 } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import { useResizeDetector } from 'react-resize-detector';
+import { GlobalContext } from '@views/context';
 import { SpawnFavListReducer } from '@/store/profiles';
 
 const typeNameMap = {
@@ -14,10 +15,12 @@ const typeNameMap = {
 
 function SpawnFavList() {
   const dispatch = useDispatch();
+  const { gTargetUID } = useContext(GlobalContext);
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
   const isWSConnected = useSelector((state) => state.system?.systemInfo?.isConnected);
   const favList = useSelector((state) => state?.profiles?.spawnFavList?.local ?? []);
   const { ref: containerRef, height: containerHeight } = useResizeDetector();
+  const [batchForUserId, setBatchForUserId] = useState(gTargetUID);
 
   const handleRemove = (id) => () => {
     dispatch(SpawnFavListReducer.actions.removeLocal(id));
@@ -57,10 +60,14 @@ function SpawnFavList() {
   };
 
   const runAllCmd = () => {
-    selectedRowKeys.map((id) => {
+    selectedRowKeys.forEach((id) => {
       const t = favList.find((item) => item.id === id);
       if (t && t.command) {
-        window.GCManageClient.sendCMD(t.command);
+        let cmd = t.command;
+        if (batchForUserId) {
+          cmd = cmd.replace(/@\d+/g, `@${batchForUserId}`);
+        }
+        window.GCManageClient.sendCMD(cmd);
       }
     });
   };
@@ -88,6 +95,9 @@ function SpawnFavList() {
     <div className="title-bar">
       <div className="left-area">
         召唤预设
+      </div>
+      <div className="uid-area">
+        <Input value={batchForUserId} onChange={(e) => setBatchForUserId(e.target.value)} placeholder="UID" prefix="强制: @" />
       </div>
       <div className="right-area">
         <Button type="primary" onClick={batchRunCommand} disabled={!isWSConnected || selectedRowKeys.length <= 0}>

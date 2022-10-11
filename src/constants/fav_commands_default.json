@@ -196,5 +196,11 @@
     "name": "关闭服务器",
     "command": "/stop",
     "system": true
+  },
+  {
+    "id": 34,
+    "name": "解锁全部神像",
+    "command": "/prop unlockmap 1",
+    "system": true
   }
 ]

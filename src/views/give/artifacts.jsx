@@ -1,5 +1,5 @@
 import React, {
-  useCallback, useMemo, useRef, useState, useLayoutEffect
+  useCallback, useMemo, useRef, useState, useLayoutEffect, useContext
 } from 'react';
 import {
   Form, Layout, Select, Row, Col, InputNumber,
@@ -11,6 +11,7 @@ import SubAttrStrict from '@views/give/components/subattr_strict';
 import SubAttrFreeList from '@views/give/components/subattr_free';
 import ArtifactFavList from '@views/give/components/artifact_fav_list';
 import { useDispatch, useSelector } from 'react-redux';
+import { GlobalContext } from '@views/context';
 import ArtifactGroupsRawData from '@/constants/artifact_groups_map.json';
 import ArtifactSubAttrsGroupMapping from '@/constants/artifact_sub_attrs_group_map.json';
 import ArtifactMainAttrs from '@/constants/artifact_main_attrs.json';
@@ -49,9 +50,10 @@ const ArtifactTypeNameMap = {
 function GiveArtifactsPage() {
   const dispatch = useDispatch();
   const isWSConnected = useSelector((state) => state.system?.systemInfo?.isConnected);
+  const { gTargetUID } = useContext(GlobalContext);
 
   const [generatorMode, setGeneratorMode] = useState('strict');
-  const [forUserId, setForUserId] = useState('');
+  const [forUserId, setForUserId] = useState(gTargetUID);
   const [artifactGroupId, setArtifactGroupId] = useState(null);
   const [artifactStar, setArtifactStar] = useState(null);
   const [artifactType, setArtifactType] = useState(null);

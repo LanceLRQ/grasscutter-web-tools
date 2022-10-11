@@ -1,5 +1,5 @@
 import React, {
-  useMemo, useState, useCallback, useEffect 
+  useMemo, useState, useCallback, useEffect, useContext
 } from 'react';
 import {
   Layout, Select, Form, Rate, Avatar, InputNumber, Row, Col, Input, Button, message
@@ -8,6 +8,7 @@ import { get } from 'lodash';
 import { QuestionOutlined } from '@ant-design/icons';
 import { useDispatch, useSelector } from 'react-redux';
 import WeaponFavList from '@views/give/components/weapon_fav_list';
+import { GlobalContext } from '@views/context';
 import WeaponRawList from '@/constants/weapons_map.json';
 import MonaWeaponMeta from '@/constants/mona/_gen_weapon';
 import { WeaponFavListReducer } from '@/store/profiles';
@@ -31,8 +32,9 @@ const TypeOptions = [
 function GiveWeaponPage() {
   const dispatch = useDispatch();
   const isWSConnected = useSelector((state) => state.system?.systemInfo?.isConnected);
+  const { gTargetUID } = useContext(GlobalContext);
 
-  const [forUserId, setForUserId] = useState('');
+  const [forUserId, setForUserId] = useState(gTargetUID);
   const [weaponKey, setWeaponKey] = useState('');
   const [weaponName, setWeaponName] = useState('');
   const [weaponType, setWeaponType] = useState(null);
@@ -51,7 +53,7 @@ function GiveWeaponPage() {
       return {
         key: weapon.key,
         value: weapon.code,
-        label: <div className="icon-selector-item">
+        label: <div className="icon-selector-item" key={weapon.key}>
           <Avatar src={metaInfo?.url} icon={<QuestionOutlined />} />
           <div className="icon-selector-item-meta">
             <div className="icon-selector-item-title">

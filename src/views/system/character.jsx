@@ -1,4 +1,6 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, {
+  useCallback, useContext, useMemo, useState 
+} from 'react';
 import {
   Button,
   Form,
@@ -22,6 +24,7 @@ import {
 } from '@ant-design/icons';
 import { useSelector } from 'react-redux';
 import { get } from 'lodash';
+import { GlobalContext } from '@views/context';
 import CharacterList from '@/constants/character.json';
 import MonaCharacterMeta from '@/constants/mona/_gen_character';
 import WhosyourdaddyList from '@/constants/whosyourdaddy.json';
@@ -55,17 +58,18 @@ Object.keys(MonaCharacterMeta).forEach((key) => {
 
 function SystemCharacterPage() {
   const isWSConnected = useSelector((state) => state.system?.systemInfo?.isConnected);
-  
+  const { gTargetUID } = useContext(GlobalContext);
+
   const [character, setCharacter] = useState(null);
   const [characterName, setCharacterName] = useState('');
   const [characterLevel, setCharacterLevel] = useState('90');
   const [characterStar, setCharacterStar] = useState('6');
-  const [characterTo, setCharacterTo] = useState('');
+  const [characterTo, setCharacterTo] = useState(gTargetUID);
   const [characterType, setCharacterType] = useState('self');
   const [characterWSDItem, setCharacterWSDItem] = useState(null);
   const [characterWSDAll, setCharacterWSDAll] = useState(false);
 
-  const [talentTo, setTalentTo] = useState('');
+  const [talentTo, setTalentTo] = useState(gTargetUID);
   const [talentN, setTalentN] = useState(10);
   const [talentE, setTalentE] = useState(10);
   const [talentQ, setTalentQ] = useState(10);

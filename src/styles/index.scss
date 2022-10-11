@@ -22,11 +22,19 @@ body, html, #root {
       flex: 1 1 auto;
       text-align: right;
       position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    .gwt-header-uid-bar {
+      flex: 0 0 $width-16;
+      padding: 0 $padding-normal;
     }
     .gwt-header-conn-status {
+      flex: 0 0 $width-17;
       padding: 0 $padding-normal;
-      position: absolute;
-      right: 0;
+      //position: absolute;
+      //right: 0;
       cursor: pointer;
       transition: background-color 500ms;
       &:hover {

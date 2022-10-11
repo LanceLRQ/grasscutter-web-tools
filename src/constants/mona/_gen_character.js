@@ -1567,6 +1567,33 @@ export default {
             
         ],
     },
+
+
+    Layla: {
+        name: "Layla",
+        chs: "莱依拉",
+        element: "Cryo",
+        weapon: "Sword",
+        star: 5,
+        avatar: getName("Layla"),
+        skillName1: "普通攻击·熠辉轨度剑",
+        skillName2: "垂裳端凝之夜",
+        skillName3: "星流摇床之梦",
+        skillMap1: [
+        ],
+        skillMap2: [
+
+        ],
+        skillMap3: [
+
+        ],
+        config: [
+
+        ],
+        configSkill: [
+
+        ],
+    },
     
     Mona: {
         name: "Mona",
@@ -1689,7 +1716,33 @@ export default {
 
         ],
     },
-    
+
+    Nahida: {
+        name: "Nahida",
+        chs: "纳西妲",
+        element: "Dendro",
+        weapon: "Catalyst",
+        star: 5,
+        avatar: getName("Nahida"),
+                skillName1: "普通攻击·行相",
+        skillName2: "所闻遍计",
+        skillName3: "心景幻成",
+        skillMap1: [
+        ],
+        skillMap2: [
+
+        ],
+        skillMap3: [
+
+        ],
+        config: [
+
+        ],
+        configSkill: [
+
+        ],
+    },
+
     Noelle: {
         name: "Noelle",
         chs: "诺艾尔",

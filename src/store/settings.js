@@ -6,6 +6,7 @@ export const UIPreferenceReducer = createSlice({
     siderCollapsed: false,
     siderMenuOpenKeys: [],
     consoleEnterType: 'ctrl+enter',
+    globalTargetUid: '',
   },
   reducers: {
     update: (state, action) => {

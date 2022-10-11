@@ -1,23 +1,25 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useContext } from 'react';
 import {
   Form, Select, Layout, InputNumber, Switch, Row, Col, Input, Button, message, Typography
 } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import { PlusOutlined } from '@ant-design/icons';
 import GiveAllFavList from '@views/give/components/give_all_fav_list';
+import { GlobalContext } from '@views/context';
 import GoodsListOptions from '@/constants/goods.json';
 import { GiveAllFavListReducer } from '@/store/profiles';
 
 function GiveAllPage() {
   const dispatch = useDispatch();
   const isWSConnected = useSelector((state) => state.system?.systemInfo?.isConnected);
+  const { gTargetUID } = useContext(GlobalContext);
 
   const [itemCode, setItemCode] = useState(null);
   const [itemName, setItemName] = useState(null);
   const [itemCount, setItemCount] = useState(1);
   const [itemLevel, setItemLevel] = useState(1);
   const [isDrop, setIsDrop] = useState(false);
-  const [forUserId, setForUserId] = useState('');
+  const [forUserId, setForUserId] = useState(gTargetUID);
 
   const calculatedCommand = useMemo(() => {
     if (!itemCode) return '';
