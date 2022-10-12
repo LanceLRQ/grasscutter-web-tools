@@ -62,13 +62,11 @@ function SpawnFavList() {
   const runAllCmd = () => {
     selectedRowKeys.forEach((id) => {
       const t = favList.find((item) => item.id === id);
-      if (t && t.command) {
-        let cmd = t.command;
-        if (batchForUserId) {
-          cmd = cmd.replace(/@\d+/g, `@${batchForUserId}`);
-        }
-        window.GCManageClient.sendCMD(cmd);
-      }
+      if (!t.code) return;
+      const u1 = t.forUser ? ` @${t.forUser}` : '';
+      const u2 = ` @${batchForUserId}`;
+      const cmd = `/spawn${batchForUserId ? u2 : u1} ${t.code} x${t.count} lv${t.level}`;
+      window.GCManageClient.sendCMD(cmd);
     });
   };
 
